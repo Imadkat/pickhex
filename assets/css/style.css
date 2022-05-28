@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Autour One';
+    src: url(../fonts/AutourOne-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Autour One';
+    background: #ebdbb2;
+    font-size: 1.2em;
+}
+
+#container {
+    position: relative;
+    top: 300px;
+    width: 600px;
+    margin: 0 auto;
+    background: #ebdbb2;
+    border: 1px solid #a89984;
+    border-radius: 5px;
+}
+
+.heading {
+    color: #504945;
+    position: relative;
+    top: 280px;
+    text-align: center;
+}
+
+.heading span {
+    color: #fb4934;
+}
+
+#preview {
+    background: #d79922;
+    /* temperary */
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#picker {
+    background: #fabd2f;
+    /* temperary */
+    width: 600px;
+    height: 200px;
+}
+
+#slider {
+    width: 520px;
+    height: 20px;
+    border-radius: 20px;
+    background: #fb4934;
+    /* temperary */
+    margin: 20px 0px 0px 40px;
+}
+
+#slider::-moz-range-thumb {
+    background: #d5c4a1;
+    /* temperary */
+    border-radius: 10px;
+
+}
+
+.input {
+    width: 520px;
+    height: 40px;
+    margin: 10px 40px 30px 40px;
+    background: none;
+    border: 1px solid #bdae93;
+    text-align: center;
+}
