@@ -15,20 +15,18 @@ body {
 }
 
 #container {
-    position: relative;
-    top: 300px;
     width: 600px;
-    margin: 0 auto;
     background: #ebdbb2;
-    border: 1px solid #a89984;
+    margin: 80px auto;
     border-radius: 5px;
+    border: 1px solid #a89984;
 }
 
 .heading {
     color: #504945;
-    position: relative;
-    top: 280px;
     text-align: center;
+    position: relative;
+    top: 50px;
 }
 
 .heading span {
@@ -36,34 +34,41 @@ body {
 }
 
 #preview {
-    background: #d79922;
-    /* temperary */
+    background: #d79922; /* temperary */
     width: 200px;
     height: 200px;
     float: left;
 }
 
 #picker {
-    background: #fabd2f;
-    /* temperary */
-    width: 600px;
+    width: 400px;
     height: 200px;
+    background: #fabd2f; /* temperary */
+    margin-left: 200px;
+
 }
 
 #slider {
     width: 520px;
     height: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
     background: #fb4934;
     /* temperary */
     margin: 20px 0px 0px 40px;
 }
 
-#slider::-moz-range-thumb {
-    background: #d5c4a1;
-    /* temperary */
-    border-radius: 10px;
+#slider::-moz-range-thumb {   /* fallback for firefox */
+    background: #d5c4a1;     /* temperary */
+    border-radius: px;
+    cursor: pointer;
+    appearance: none;
+}
 
+#slider::-webkit-slider-thumb { /* fallback for chrome, opera... */
+    background: #d5c4a1; /* temperary */
+    border-radius: 5px;
+    appearance: none;
+    cursor: pointer;
 }
 
 .input {
