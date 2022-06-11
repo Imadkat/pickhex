@@ -1,81 +1,93 @@
 @font-face {
-    font-family: 'Autour One';
-    src: url(../fonts/AutourOne-Regular.ttf);
+  font-family: "Autour One";
+  src: url(../fonts/AutourOne-Regular.ttf);
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Autour One';
-    background: #ebdbb2;
-    font-size: 1.2em;
+  font-family: "Autour One";
+  background: #ebdbb2;
+  font-size: 1.2em;
 }
 
 #container {
-    width: 600px;
-    background: #ebdbb2;
-    margin: 80px auto;
-    border-radius: 5px;
-    border: 1px solid #a89984;
+  width: 450px;
+  background: #ebdbb2;
+  margin: 80px auto;
+  border-radius: 5px;
+  border: 1px solid #a89984;
 }
 
 .heading {
-    color: #504945;
-    text-align: center;
-    position: relative;
-    top: 50px;
+  color: #504945;
+  text-align: center;
+  position: relative;
+  top: 50px;
 }
 
 .heading span {
-    color: #fb4934;
+  color: #fb4b34dc;
 }
 
 #preview {
-    background: #d79922; /* temperary */
-    width: 200px;
-    height: 200px;
-    float: left;
+  float: left;
+  width: 150px;
+  background-color: #009900;
+  height: 150px;
 }
 
-#picker {
-    width: 400px;
-    height: 200px;
-    background: #fabd2f; /* temperary */
-    margin-left: 200px;
-
+#canvas {
+  float: right;
+}
+#circle {
+  position: absolute;
+  border: 1px solid #000;
+  border-radius: 20px;
 }
 
 #slider {
-    width: 520px;
-    height: 20px;
-    border-radius: 10px;
-    background: #fb4934;
-    /* temperary */
-    margin: 20px 0px 0px 40px;
+  width: 400px;
+  height: 15px;
+  background: -moz-linear-gradient(
+    to right,
+    red 0%,
+    rgb(255, 200, 0) 20%,
+    #009900 40%,
+    cyan 60%,
+    blue 80%,
+    rgb(245, 0, 233) 90%,
+    red 100%
+  );
+  border-radius: 50px;
+  margin: 30px 0 20px 25px;
 }
 
-#slider::-moz-range-thumb {   /* fallback for firefox */
-    background: #d5c4a1;     /* temperary */
-    border-radius: px;
-    cursor: pointer;
-    appearance: none;
+#slider::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
 }
 
-#slider::-webkit-slider-thumb { /* fallback for chrome, opera... */
-    background: #d5c4a1; /* temperary */
-    border-radius: 5px;
-    appearance: none;
-    cursor: pointer;
+#slider::-webkit-slider-thumb {
+  /* fallback for chrome, opera... */
+  background: #d5c4a1;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
 }
 
 .input {
-    width: 520px;
-    height: 40px;
-    margin: 10px 40px 30px 40px;
-    background: none;
-    border: 1px solid #bdae93;
-    text-align: center;
+  width: 400px;
+  height: 40px;
+  margin: 0px 0px 25px 25px;
+  background: none;
+  border: 1px solid #bdae93;
+  text-align: center;
 }
