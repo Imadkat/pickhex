@@ -17,8 +17,7 @@ body {
 #container {
   width: 450px;
   background: #ebdbb2;
-  margin: 80px auto;
-  border-radius: 5px;
+  margin: 250px auto;
   border: 1px solid #a89984;
 }
 
@@ -26,7 +25,7 @@ body {
   color: #504945;
   text-align: center;
   position: relative;
-  top: 50px;
+  top: 230px;
 }
 
 .heading span {
@@ -35,33 +34,11 @@ body {
 
 #preview {
   float: left;
-  width: 150px;
-  background-color: #009900;
-  height: 150px;
-}
-
-#canvas {
-  float: right;
-}
-#circle {
-  position: absolute;
-  border: 1px solid #000;
-  border-radius: 20px;
 }
 
 #slider {
   width: 400px;
   height: 15px;
-  background: -moz-linear-gradient(
-    to right,
-    red 0%,
-    rgb(255, 200, 0) 20%,
-    #009900 40%,
-    cyan 60%,
-    blue 80%,
-    rgb(245, 0, 233) 90%,
-    red 100%
-  );
   border-radius: 50px;
   margin: 30px 0 20px 25px;
 }

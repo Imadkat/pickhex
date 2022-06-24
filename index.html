@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
 
-    <title>pickhex, pick your color</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
-  <body>
-    <canvas id="rectangle"></canvas>
-    <h3 class="heading">pick<span class="hex">HEX</span></h3>
-    <div id="container">
-      <div id="selection">
-        <canvas id="canvas"></canvas>
-        <canvas id="circle" width="15" height="15"></canvas>
-        <canvas id="preview"> </canvas>
-      </div>
-      <input
-        type="range"
-        id="slider"
-        name="range"
-        min="0"
-        max="100"
-        value="50"
-      />
-      <div id="output"></div>
-      <input
-        type="text"
-        id="hex-value"
-        class="input"
-        placeholder="HEX"
-        value="#"
-      />
+  <title>pickhex, pick your hex</title>
+</head>
+
+<body>
+  <h3 class="heading">pick<span class="hex">HEX</span></h3>
+  <div id="container">
+    <div id="rectangles">
+      <canvas id="preview" height="150" width="150"></canvas>
+      <canvas id="canvas" width="300" height="150"></canvas>
+    </div>
+
+    <div id="inputs">
+      <input type="range" id="slider" name="range" min="0" max="100" value="50" />
+      <input type="text" id="hex-value" class="input" placeholder="HEX" value="#" />
       <input type="text" id="rgb" class="input" placeholder="RGB" />
     </div>
-    <script type="module" src="src/main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="src/main.js"></script>
+</body>
+
 </html>
